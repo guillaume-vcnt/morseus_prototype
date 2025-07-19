@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>morseus</title>
+    <script type="module" src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="main-container">
+      <h1>Morseus</h1>
+
+      <div class="encode">
+        <label id="label-encode" for="encode-latin"
+          >Encode Latin to Morse</label
+        >
+        <input
+          id="encode-latin"
+          type="text"
+          maxlength="10"
+          placeholder="Enter your Latin name"
+        />
+        <div class="result-encode-container"></div>
+        <button id="start-encode" type="submit">START</button>
+      </div>
+
+      <div class="decode">
+        <label id="label-decode" for="decode-morse"
+          >Decode Morse to Latin</label
+        >
+        <input
+          id="decode-morse"
+          type="text"
+          placeholder="Enter your Morse name"
+        />
+        <div class="result-decode-container"></div>
+        <button id="start-decode" type="submit">START</button>
+      </div>
+    </div>
+  </body>
+</html>
